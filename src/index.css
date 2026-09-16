@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --background: #f8f9ff;
+    --foreground: #0b1c30;
+    
+    --surface: #f8f9ff;
+    --surface-dim: #cbdbf5;
+    --surface-bright: #f8f9ff;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #eff4ff;
+    --surface-container: #e5eeff;
+    --surface-container-high: #dce9ff;
+    --surface-container-highest: #d3e4fe;
+    --on-surface: #0b1c30;
+    --on-surface-variant: #414752;
+    --inverse-surface: #213145;
+    --inverse-on-surface: #eaf1ff;
+    --surface-tint: #005eb3;
+
+    --outline: #717784;
+    --outline-variant: #c1c6d4;
+
+    --primary: #005cae;
+    --primary-foreground: #ffffff;
+    --primary-container: #1d74d4;
+    --on-primary-container: #fefcff;
+    --inverse-primary: #a7c8ff;
+
+    --secondary: #2457c7;
+    --secondary-foreground: #ffffff;
+    --secondary-container: #608bfd;
+    --on-secondary-container: #002468;
+
+    --tertiary: #00628d;
+    --tertiary-foreground: #ffffff;
+    --tertiary-container: #007cb1;
+    --on-tertiary-container: #fcfcff;
+
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+    --error-container: #ffdad6;
+    --on-error-container: #93000a;
+
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #3080e0;
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-foreground;
+  }
+}
+
+/* Tabular Data specific rule from design system */
+.tnum {
+  font-feature-settings: "tnum" on, "zero" on;
+}
