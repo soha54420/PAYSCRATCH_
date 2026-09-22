@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+backend/ml_models/payscratch_random_forest.joblib
+backend/.env
+backend/__pycache__/

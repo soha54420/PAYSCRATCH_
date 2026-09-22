@@ -47,32 +47,7 @@ export function TransactionDetails({ transaction, open, onOpenChange }: Transact
 
         <div className="p-6 space-y-8 flex-1">
           {/* Why was this flagged? (Placeholder for ML Explanation) */}
-          {isHighRisk && (
-            <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-5">
-              <h3 className="font-semibold text-destructive flex items-center gap-2 mb-3">
-                <AlertCircle className="h-5 w-5" />
-                Why was this flagged?
-              </h3>
-              <ul className="space-y-2 text-sm text-foreground">
-                <li className="flex gap-2">
-                  <span className="text-destructive font-bold">•</span>
-                  <span><strong>Velocity Anomaly:</strong> 4th transaction attempt in 10 minutes from this device footprint.</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-destructive font-bold">•</span>
-                  <span><strong>Geo-Velocity:</strong> Impossible travel speed between IP location (Russia) and billing address (New York).</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-destructive font-bold">•</span>
-                  <span><strong>Device Spoofing:</strong> Mismatch between user-agent OS and TCP fingerprint.</span>
-                </li>
-              </ul>
-              <div className="mt-4 text-xs text-muted-foreground border-t border-destructive/10 pt-3">
-                <ServerCrash className="h-3 w-3 inline mr-1" />
-                ML Explanation Engine (Beta)
-              </div>
-            </div>
-          )}
+          {/* ML Explanation Engine will go here in the future */}
 
           {/* Customer Intelligence */}
           <div>
